@@ -60,7 +60,7 @@ img {
 }
 
 #infos * {
-	color: mediumblue;
+	color: var(--info-color);
 	font-style: italic;
 }
 
@@ -114,11 +114,13 @@ a.btn:not(hover){
   --background-color: lightgrey;
   --background-color-2: white;
   --font-color: #000000;
+  --info-color: mediumblue;
 }
 .theme-dark {
   --background-color: #525252;
   --background-color-2: #313131;
-  --font-color: #CA3E47;
+  --font-color: #ffffff;
+  --info-color: rgb(0, 191, 255);
 }
 .container {
   display: flex;
