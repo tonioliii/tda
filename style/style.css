@@ -110,14 +110,6 @@ a.btn:not(hover){
 
 
 
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
 .theme-light {
   --background-color: lightgrey;
   --background-color-2: white;
