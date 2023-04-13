@@ -1,3 +1,24 @@
+h1{
+  font-size: 4vh;
+}
+
+h2{
+  font-size: 3.5vh;
+}
+
+h3{
+  font-size: 2.75vh;
+}
+
+li{
+  font-size: 2.5vh;
+  margin-left: 3vh;
+}
+
+p{
+  font-size: 2.5vh;
+}
+
 * {
 	color: var(--font-color);
 }
@@ -8,7 +29,7 @@ body, div {
 }
 body {
 	font-family: capitalize;
-	font-size: 16px;
+	font-size: 1.6vh;
 	background-color: var(--background-color);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -19,24 +40,26 @@ html,body {
 
 img { 
 	float: left; 
-	margin-right: 30px;
+	margin-right: 3vh;
 	width: 15%;
 }
-th { width: 150px;}
+
+th { width: 15vh;}
 ul { list-style-type:disc }
 
 #entete-de-page {
-	padding: 3px;
-	height: 130px;
+	padding: 0.3vh;
+	height: 15vh;
 	background-color: var(--background-color-2);
-	font-size: 35px;
+	font-size: 3vh;
 	font-weight: bold;
 	font-variant: small-caps;
 	text-align: center;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 #bloc-menu {
-	height: 75px;
+	height: 8vh;
 	float: center;
 	width: 100%;
 	background-color: brown;
@@ -48,15 +71,15 @@ ul { list-style-type:disc }
 }
 
 #contenu {
-	padding: 7px;
+	padding: 0.7vh;
 	background-color: var(--background-color);
-	margin-left: 10px;
+	margin-left: 1vh;
 	height: 100%;
 	font-size: x-large;
 }
 
 img {
-	width: 400px;
+	width: 40vh;
 }
 
 #infos * {
@@ -66,26 +89,25 @@ img {
 
 #infos {
 	vertical-align: bottom;
-	position: relative;
-	top: 10%;
-  	padding-bottom: 20px;
+	position: absolute;
+	bottom: 5vh;
 }
 
 #pied-de-page {
-	padding: 5px;
+	padding: 0.5vh;
 	background-color: var(--background-color);
-	font-size: 11px;
+	font-size: 1.1vh;
 }
 
 a.btn{
 	text-decoration: none;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 10px;	
-	font-size: 23px;
+	padding-left: 3.75vh;
+	padding-right: 3.75vh;
+	padding-top: 1.25vh;
+	padding-bottom: 1.25vh;
+	border-radius: 1vh;	
+	font-size: 2.5vh;
 }
 
 a.btn:hover{
@@ -99,7 +121,6 @@ a.btn:not(hover){
 	background-color: brown;
 	transition: 500ms;
 }
-
 
 
 
@@ -138,17 +159,17 @@ a.btn:not(hover){
 .container button {
   color: var(--font-color);
   background: var(--background-color);
-  padding: 10px 20px;
+  padding: 1vh 2vh;
   border: 0;
-  border-radius: 5px;
+  border-radius: 0.5vh;
 }
 
 /* The switch - the box around the slider */
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 6vh;
+  height: 3.4vh;
 }
 
 /* Hide default HTML checkbox */
@@ -174,16 +195,16 @@ a.btn:not(hover){
 .slider:before {
   position: absolute;
   content: "";
-  height: 40px;
-  width: 40px;
-  left: 0px;
-  bottom: 4px;
+  height: 4vh;
+  width: 4vh;
+  left: 0vh;
+  bottom: 0.4vh;
   top: 0;
   bottom: 0;
   margin: auto 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 0 0px 15px #2020203d;
+  box-shadow: 0 0vh 1.5vh #2020203d;
   background: white url('https://i.ibb.co/FxzBYR9/night.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -198,9 +219,9 @@ input:focus + .slider {
 } */
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(24px);
-  -ms-transform: translateX(24px);
-  transform: translateX(24px);
+  -webkit-transform: translateX(2.4vh);
+  -ms-transform: translateX(2.4vh);
+  transform: translateX(2.4vh);
   background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -208,7 +229,7 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 3.4vh;
 }
 
 .slider.round:before {
