@@ -56,20 +56,20 @@ img {
   right: 10vh;
 }
 
-th { width: 15vh;}
+th { width: 10vh;}
 ul { list-style-type:disc }
 
 #bloc-menu {
 	height: 8vh;
-	float: center;
 	width: 100%;
 	background-color: var(--background-color);
 }
 
 #block-menu table{
 	border: none;
-	text-align: center;
 }
+
+
 
 #contenu {
 	background-color: var(--background-color);
@@ -132,7 +132,6 @@ a.btn_active {
 span.orange {
   color: #FD6F1F;
 }
-
 
 
 
