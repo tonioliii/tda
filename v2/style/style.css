@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
 h1{
   font-size: 3vh;
 }
@@ -42,7 +44,7 @@ body {
 
 html,body {
 	height: 85%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img { 
@@ -56,16 +58,6 @@ img {
 
 th { width: 15vh;}
 ul { list-style-type:disc }
-
-#entete-de-page {
-	padding: 0.3vh;
-	height: 15vh;
-	background-color: var(--background-color-2);
-	font-size: 3vh;
-	font-weight: bold;
-	font-variant: small-caps;
-	text-align: center;
-}
 
 #bloc-menu {
 	height: 8vh;
@@ -110,8 +102,9 @@ a.btn, a.btn_active{
 	padding-bottom: 1vh;
 	font-size: 2.2vh;
   text-decoration: none;
-  background: linear-gradient(to top, #FD6F1F 0%, #FD6F1F 8%, transparent 8.01%) no-repeat left bottom / 0 100%;
+  background: linear-gradient(to top, #FD6F1F 0%, #FD6F1F 7.5%, transparent 7.5%) no-repeat left bottom / 0 100%;
   transition: background-size 0.35s;
+  font-weight: 500;
 }
 
 a.btn:hover {
