@@ -1,9 +1,9 @@
 h1{
-  font-size: 3vh;
+  font-size: 4vh;
 }
 
 h2{
-  font-size: 9vh;
+  font-size: 3.5vh;
 }
 
 h3{
@@ -13,11 +13,6 @@ h3{
 li{
   font-size: 2.5vh;
   margin-left: 3vh;
-}
-
-h1.logo{
-  font-size: 2vh;
-  color: var(--font-color);
 }
 
 p{
@@ -36,20 +31,17 @@ body {
 	font-family: capitalize;
 	font-size: 1.6vh;
 	background-color: var(--background-color);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html,body {
-	height: 85%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	height: 60%;
 }
 
 img { 
-	float: right; 
+	float: left; 
 	margin-right: 3vh;
-  width: 80vh;
-  position: absolute;
-  top: 20vh;
-  right: 10vh;
+	width: 15%;
 }
 
 th { width: 15vh;}
@@ -63,13 +55,14 @@ ul { list-style-type:disc }
 	font-weight: bold;
 	font-variant: small-caps;
 	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #bloc-menu {
 	height: 8vh;
 	float: center;
 	width: 100%;
-	background-color: var(--background-color);
+	background-color: brown;
 }
 
 #block-menu table{
@@ -78,20 +71,26 @@ ul { list-style-type:disc }
 }
 
 #contenu {
+	padding: 0.7vh;
 	background-color: var(--background-color);
-	margin-left: 4vh;
+	margin-left: 1vh;
 	height: 100%;
-	font-size: 3vh;
-  position: relative;
-  top: 5vh;
+	font-size: x-large;
 }
 
+img {
+	width: 40vh;
+}
+
+#infos * {
+	color: var(--info-color);
+	font-style: italic;
+}
 
 #infos {
 	vertical-align: bottom;
 	position: absolute;
 	bottom: 5vh;
-  margin-left: 3vh;
 }
 
 #pied-de-page {
@@ -100,15 +99,17 @@ ul { list-style-type:disc }
 	font-size: 1.1vh;
 }
 
-a.btn, a.btn_active{
+a.btn{
 	text-decoration: none;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	padding-left: 0.1vh;
 	padding-right: 0.1vh;
 	padding-top: 1.25vh;
 	padding-bottom: 1vh;
-	font-size: 2.2vh;
+	font-size: 2.5vh;
+
   text-decoration: none;
-  background: linear-gradient(to top, #FD6F1F 0%, #FD6F1F 8%, transparent 8.01%) no-repeat left bottom / 0 100%;
+  background: linear-gradient(to top, var(--font-color) 0%, var(--font-color) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
   transition: background-size 0.35s;
 }
 
@@ -116,40 +117,21 @@ a.btn:hover {
   background-size: 100% 100%;
 }
 
-a.info_link {
-  text-decoration: none;
-  color: white;
-  background-color: #FD6F1F;
-  border-radius: 1vh;
-  padding: 0.75vh;
-}
 
-a.info_link:hover {
-  background-color: rgb(224,90,27);
-  transition: 0.5s;
 
-}
-
-a.btn_active {
-  color: #FD6F1F;
-}
-
-span.orange {
-  color: #FD6F1F;
-}
 
 
 
 
 
 .theme-light {
-  --background-color: rgb(255, 255, 255);
+  --background-color: lightgrey;
   --background-color-2: white;
-  --font-color: rgb(48,48,48);
-  --info-color: white;
+  --font-color: #000000;
+  --info-color: mediumblue;
 }
 .theme-dark {
-  --background-color: rgb(49,51,56);
+  --background-color: #525252;
   --background-color-2: #313131;
   --font-color: #ffffff;
   --info-color: rgb(0, 191, 255);
@@ -164,10 +146,11 @@ span.orange {
 }
 .container h1 {
   color: var(--font-color);
+  font-family: sans-serif;
 }
 .container button {
   color: var(--font-color);
-  background: #FD6F1F;
+  background: var(--background-color);
   padding: 1vh 2vh;
   border: 0;
   border-radius: 0.5vh;
@@ -196,7 +179,7 @@ span.orange {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FD6F1F;
+  background-color: var(--background-color);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
