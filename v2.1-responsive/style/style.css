@@ -281,14 +281,14 @@ body.noscroll {
 
 @media screen and (max-width: 130vh) {
   #nav-bar {
-    display: none;
+    margin-left: -100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
     position: absolute;
-    margin: 0;
     padding: 0;
     top: 0;
     bottom: 0;
@@ -297,6 +297,7 @@ body.noscroll {
     z-index : 1;
     background-color: var(--mobile-menu-color);
     backdrop-filter: blur(0.8vh);
+    transition: margin 0.5s ease;
     }
 
   .menu-btn {
@@ -310,7 +311,7 @@ body.noscroll {
   }
 
   #nav-bar.mobile-menu {
-    display: flex;
+    margin-left: 0px;
   }
 
   a.btn, a.btn_active{
