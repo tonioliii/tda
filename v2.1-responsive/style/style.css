@@ -5,7 +5,7 @@ h1{
 }
 
 h2{
-  font-size: 5vw;
+  font-size: 250%;
   margin-bottom: 0vh;
 }
 
@@ -21,7 +21,7 @@ li{
 }
 
 p{
-  font-size: 1.5vw;
+  font-size: 80%;
   margin-top: 2vh;
 }
 
@@ -138,7 +138,7 @@ a.btn:hover {
   background-size: 100% 100%;
 }
 
-a.info_link {
+.info_link {
   text-decoration: none;
   color: white;
   background-color: #FD6F1F;
@@ -147,7 +147,7 @@ a.info_link {
   font-size: 80%;
 }
 
-a.info_link:hover {
+.info_link:hover {
   background-color: rgb(224,90,27);
   transition: 0.5s;
 
@@ -329,7 +329,7 @@ body.noscroll {
 
 
 
-@media screen and (max-width: 80vh) {
+@media screen and (max-width: 125vh) {
   .main-image {
     position: static;
     float: none;
@@ -343,13 +343,13 @@ body.noscroll {
   }
 
   p{
-    font-size: 2.5vw;
     margin-top: 2vh;
+    font-size: 2.5vw;
   }
 
   h2 {
-    font-size: 8vw;
     margin-top: 3vh;
+    font-size: 10vw;
   }
 
   .logo-class {
@@ -365,14 +365,16 @@ body.noscroll {
     margin-left: 10%;
   }
 
-  a.info_link {
-    font-size: 40%;
-  }
-
   li {
     margin-left: 1vh;
   }
 
+  .info_link {
+    font-size: 2vw;
+  }
 
+  h3 {
+    font-size: 4vw;
+  }
 
 }
