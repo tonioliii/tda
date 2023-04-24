@@ -378,6 +378,7 @@ body.noscroll {
   #infos {
     position: static;
     margin-left: 10%;
+    padding-bottom: 1vh;
   }
 
   p{
