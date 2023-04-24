@@ -1,5 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
+@keyframes right2left {
+  0% {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes left2right {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.main-image {
+  opacity: 0;
+  animation: 0.5s ease-out .3s 1 right2left;
+  animation-fill-mode: forwards;
+}
+
+#contenu {
+  opacity: 0;
+  animation: 0.5s ease-out .3s 1 left2right;
+  animation-fill-mode: forwards;
+}
+
 .br {
   display: block;
   margin-bottom: 0em;
