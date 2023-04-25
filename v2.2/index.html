@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Lycée Thérèse d'Avila</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<link rel="icon" href="favicon.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+</head>
+
+<body>
+	<br>
+	<div class="head">
+		<div class="logo-class">
+			<h1 class="logo"> Lycée TDA </h1>
+		</div>
+		<div id="nav-bar" cellspacing="0" cellpadding="0">
+			<a class="btn_active" href="index.html"> Accueil </a>
+			<a class="btn" href="html/Professeurs.html"> Professeurs  </a>
+			<a class="btn" href="html/Classes.html"> Classes </a>
+			<a class="btn" href="html/Baccalaureat.html"> Baccalauréat </a>
+			<a class="btn" href="html/Vie_scolaire.html"> Vie scolaire </a>
+			<label id="switch" class="switch">
+				<input type="checkbox" onchange="toggleTheme()" id="slider">
+				<span class="slider round"></span>
+			</label>
+		</div>
+		<img class="menu-btn" src="image/menu-btn.png">
+	</div>
+
+	<hr>
+	
+	<div id="contenu">
+		<div class="left">
+			<h2> Bienvenue...</h2>
+			<p>
+				Lycée Thérèse D'Avila <br>
+				Ensemble scolaire <br>
+				Maternelle, primaire, collège, lycée.
+			</p>
+			<p> <span class="orange"> Top  5 </span> meilleurs lycées de Lille <br/> </p>
+		</div>
+
+		<div class="right">
+			<img src="image/Accueil.jpg" alt="image tda" width="180" class="main-image">
+		</div>
+	</div>
+		
+
+	<div id="infos">
+		<h3> A lire aussi: </h3>
+		<li> <a class="info_link" href="https://groupe-reussite.fr/ressources/blog/choisir-son-lycee/" target="_blank"> Comment choisir un lycée ? </a> </li>
+		<li> <a class="info_link" href="https://www.letudiant.fr/lycee/annuaire-des-lycees/fiche/lycee-general-prive-therese-davila-59.html" target="_blank"> Le lycée thérèse d'avila </a> </li>
+	</div>
+
+	<div id="footer">
+		<a href="https://tonioliii.github.io/tda" class="copyright">tonioliii.github.io/tda &copy; 2023 All Right Reserved</a>
+		<div class="social">
+			<a href="https://tonioliii.github.io/tda"><i class="fa fa-github"></i></a>
+			<a href="https://tonioliii.github.io/tda"><i class="fa fa-youtube-play"></i></a>
+			<a href="https://tonioliii.github.io/tda"><i class="fa fa-discord"></i></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script>
+        const menuHamburger = document.querySelector(".menu-btn")
+        const navLinks = document.querySelector("#nav-bar")
+		const body = document.querySelector("body")
+
+        menuHamburger.addEventListener('click',()=>{navLinks.classList.toggle('mobile-menu')}) 
+        menuHamburger.addEventListener('click',()=>{body.classList.toggle('noscroll')})
+
+	</script>
+</body>
+
+</html>
