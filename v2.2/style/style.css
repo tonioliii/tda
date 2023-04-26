@@ -144,7 +144,7 @@ ul { list-style-type:disc }
 
 #footer .social{
   display: flex;
-  gap: 10vh;
+  gap: 20%;
   justify-content: right;
   width: 100%;
   bottom: 3vh;
@@ -449,15 +449,22 @@ body.noscroll {
   }
 
   .info_link {
-    font-size: 2.7vw;
+    font-size: 5vw;
   }
 
   h3 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   li{
-    font-size: 2.5vh;
-    margin-bottom: 3vw;
+    margin-bottom: 3.5vw;
+  }
+
+  #contenu .left {
+  width: 94%;
+  }
+
+  #contenu .right {
+    width: 94%;
   }
 }
