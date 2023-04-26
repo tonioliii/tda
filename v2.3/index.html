@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Lycée Thérèse d'Avila</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<link rel="icon" href="favicon.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="head">
+		<div class="text">
+			<div class="logo">
+				<h1> Lycée TDA </h1>
+			</div>
+			<div id="nav-bar" cellspacing="0" cellpadding="0">
+				<a class="btn_active" href="#accueil"> Accueil </a>
+				<a class="btn" href="#professeurs"> Professeurs  </a>
+				<a class="btn" href="#classes"> Classes </a>
+				<a class="btn" href="#baccalaureat"> Baccalauréat </a>
+				<a class="btn" href="#vie_scolaire"> Vie scolaire </a>
+				<label id="switch" class="switch">
+					<input type="checkbox" onchange="toggleTheme()" id="slider">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+		<img class="menu-btn" src="image/menu-btn.png">
+		<hr class="head-separator">
+	</div>
+
+	<div id="contenu">
+		<div id="accueil" class="landmark"></div>
+		<div class="box box1">
+			<div class="left">
+				<h2> Bienvenue...</h2>
+				<p>
+					Lycée Thérèse D'Avila <br>
+					Ensemble scolaire <br>
+					Maternelle, primaire, collège, lycée.
+				</p>
+				<p> <span class="important"> Top  5 </span> meilleurs lycées de Lille <br/> </p>
+			</div>
+	
+			<div class="right">
+				<img src="image/Accueil.jpg" alt="image tda" width="180" class="main-image">
+			</div>
+		</div>
+		
+		<div id="professeurs" class="landmark"></div>
+		<div class="box">			
+			<h2>
+				Nos Professeurs
+			</h2>
+		</div>
+		<div class="box box2">	
+			<div class="left">
+				<img src="image/Accueil.jpg" alt="image tda" width="180" class="main-image">
+			</div>
+			<div class="right">
+				<p>
+					caca caca caca caca caca caca caca caca caca caca caca <br> caca caca caca caca <br> caca caca caca caca <br> caca caca caca caca <br> caca caca caca caca <br> caca caca caca caca 
+				</p>
+				<p> <span class="important"> Top  5 </span> meilleurs lycées de Lille <br/> </p>
+			</div>
+		</div>
+
+		
+
+		<div class="infos">
+			<h3> A lire aussi: </h3>
+			<li> <a class="info_link" href="https://groupe-reussite.fr/ressources/blog/choisir-son-lycee/" target="_blank"> Comment choisir un lycée ? </a> </li>
+			<li> <a class="info_link" href="https://www.letudiant.fr/lycee/annuaire-des-lycees/fiche/lycee-general-prive-therese-davila-59.html" target="_blank"> Le lycée thérèse d'avila </a> </li>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="copyright">
+			<a href="https://tonioliii.github.io/tda" class="">tonioliii.github.io/tda &copy; 2023 All Right Reserved</a>
+		</div>
+		<div class="social">
+			<a href="https://example.com" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://example.com" target="_blank"><i class="fa fa-youtube-play"></i></a>
+			<a href="https://example.com" target="_blank"><i class="fa fa-discord"></i></a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script>
+
+		var delay = ( function() {
+		    var timer = 0;
+		    return function(callback, ms) {
+		        clearTimeout (timer);
+		        timer = setTimeout(callback, ms);
+		    };
+		})();
+
+        const menuHamburger = document.querySelector(".menu-btn")
+        const navbar = document.querySelector("#nav-bar")
+		const body = document.querySelector("body")
+		const btn = document.querySelector(".btn")
+		const btn_active = document.querySelector(".btn_active")
+
+		// navbar.classList.add('mobile-menu') & delay(function(){}, 2000) & navbar.classList.add('animation')
+
+        // menuHamburger.addEventListener('click',()=>{navbar.classList.toggle('mobile-menu')})
+		// menuHamburger.addEventListener('click',()=>{if ( navbar.classList.contains('mobile-menu') ) {navbar.classList.remove('mobile-menu')} else (navbar.classList.add('mobile-menu'))})
+		menuHamburger.addEventListener('click',()=>{if ( navbar.classList.contains('mobile-menu') ) {navbar.classList.add('animation') & navbar.classList.remove('mobile-menu') & delay(function(){navbar.classList.remove('animation')}, 500)} else (navbar.classList.add('mobile-menu'))})
+
+
+        // menuHamburger.addEventListener('click',()=>{body.classList.toggle('noscroll')})
+		menuHamburger.addEventListener('click',()=>{if ( body.classList.contains('noscroll') ) {body.classList.remove('noscroll')} else (body.classList.add('noscroll'))})
+
+
+		btn.addEventListener('click',()=>{navbar.classList.remove('mobile-menu') & body.classList.remove('noscroll')})
+		btn_active.addEventListener('click',()=>{navbar.classList.remove('mobile-menu') & body.classList.remove('noscroll')})
+	</script>
+
+</body>
+
+</html>
