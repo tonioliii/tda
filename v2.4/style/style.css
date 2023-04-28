@@ -5,12 +5,12 @@
 }
 
 .reveal-left2right.active{
-  animation: 0.5s ease-out .3s 1 left2right;
+  animation: 0.3s ease-out .2s 1 left2right;
   animation-fill-mode: forwards;
 }
 
 .reveal-right2left.active{
-  animation: 0.5s ease-out .3s 1 right2left;
+  animation: 0.3s ease-out .2s 1 right2left;
   animation-fill-mode: forwards;
 }
 
