@@ -17,24 +17,24 @@
 				<h1> Lycée TDA </h1>
 			</div>
 			<div id="nav-bar" class="computer" cellspacing="0" cellpadding="0">
-				<a class="btn_active computer" href="#accueil"> Accueil </a>
-				<a class="btn computer" href="#professeurs"> Professeurs  </a>
-				<a class="btn computer" href="#classes"> Classes </a>
-				<a class="btn computer" href="#baccalaureat"> Baccalauréat </a>
-				<a class="btn computer" href="#vie_scolaire"> Vie scolaire </a>
+				<a class="accueil btn computer" href="#accueil"> Accueil </a>
+				<a class="professeurs btn computer" href="#professeurs"> Professeurs  </a>
+				<a class="classes btn computer" href="#classes"> Classes </a>
+				<a class="baccalaureat btn computer" href="#baccalaureat"> Baccalauréat </a>
+				<a class="vie_scolaire btn computer" href="#vie_scolaire"> Vie scolaire </a>
 				<label id="switch computer" class="switch">
-					<input type="checkbox" onchange="toggleTheme()" id="slider">
+					<input type="checkbox computer" onchange="toggleTheme()" id="slider">
 					<span class="slider round computer"></span>
 				</label>
 
 				<div id="nav-bar-mobile" cellspacing="0" cellpadding="0">
-					<a class="btn_active mobile" href="#accueil"> Accueil </a>
-					<a class="btn mobile" href="#professeurs"> Professeurs  </a>
-					<a class="btn mobile" href="#classes"> Classes </a>
-					<a class="btn mobile" href="#baccalaureat"> Baccalauréat </a>
-					<a class="btn mobile" href="#vie_scolaire"> Vie scolaire </a>
+					<a class="accueil btn mobile" href="#accueil"> Accueil </a>
+					<a class="professeurs btn mobile" href="#professeurs"> Professeurs  </a>
+					<a class="classes btn mobile" href="#classes"> Classes </a>
+					<a class="baccalaureat btn mobile" href="#baccalaureat"> Baccalauréat </a>
+					<a class="vie_scolaire btn mobile" href="#vie_scolaire"> Vie scolaire </a>
 					<label id="switch mobile" class="switch">
-						<input type="checkbox" onchange="toggleTheme()" id="slider">
+						<input type="checkbox mobile" onchange="toggleTheme()" id="slider">
 						<span class="slider round mobile"></span>
 					</label>
 				</div>
@@ -45,7 +45,7 @@
 	</div>
 
 	<div id="contenu">
-		<div id="accueil" class="landmark"></div>
+		<div id="accueil" class="accueil landmark"></div>
 		<div class="box box1">
 			<div class="left reveal reveal-left2right">
 				<h2> Bienvenue...</h2>
@@ -62,7 +62,7 @@
 			</div>
 		</div>
 		
-		<div id="professeurs" class="landmark"></div>
+		<div id="professeurs" class="professeurs landmark"></div>
 		<div class="box">			
 			<h2>
 				Nos Professeurs
@@ -79,7 +79,7 @@
 			</div>
 		</div>
 
-		<div id="classes" class="landmark"></div>
+		<div id="classes" class="classes landmark"></div>
 		<div class="box">			
 			<h2>
 				Nos Classes
@@ -96,7 +96,7 @@
 			</div>
 		</div>
 
-		<div id="baccalaureat" class="landmark"></div>
+		<div id="baccalaureat" class="baccalaureat landmark"></div>
 		<div class="box">			
 			<h2>
 				Le Baccalaureat
@@ -113,7 +113,7 @@
 			</div>
 		</div>
 
-		<div id="vie_scolaire" class="landmark"></div>
+		<div id="vie_scolaire" class="vie_scolaire landmark"></div>
 		<div class="box">			
 			<h2>
 				Notre Vie Scolaire
@@ -201,7 +201,6 @@
         const navbar = document.querySelector("#nav-bar-mobile")
 		const body = document.querySelector("body")
 		const btn = document.querySelectorAll(".btn.mobile")
-		const btn_active = document.querySelector(".btn_active.mobile")
 
 
 		function toogle_mobile_menu(){
@@ -209,8 +208,6 @@
 		}
 
 		menuHamburger.addEventListener('click',()=>{toogle_mobile_menu()})
-
-		btn_active.addEventListener('click',()=>{toogle_mobile_menu()})
 
 		for(var i = 0; i < btn.length; i++){
 			btn[i].addEventListener('click',()=>{toogle_mobile_menu()})
@@ -239,8 +236,58 @@
 	        // else{
 	        //   reveals[i].classList.remove('active');
 	        // }
-	      }
-	    }
+		}
+	}
+	</script>
+
+	<!-- Animation buttons -->
+	<script type="text/javascript">
+		reveal()
+	    window.addEventListener('scroll', reveal);
+
+		function remove(){
+			var btns = document.querySelectorAll('.btn');
+			var reveals = document.querySelectorAll('.landmark');
+			for(var i = 0; i < reveals.length; i++){
+			reveals[i].classList.remove('btn_active');
+				var classList = reveals[i].className.split(' ')[0]
+				for(var n = 0; n < btns.length; n++){
+					if(classList === btns[n].className.split(' ')[0]) {
+						btns[n].classList.remove("btn_active")
+					}
+				}
+		}
+	}
+
+	    function reveal(){
+			var btns_computer = document.querySelectorAll('.btn.computer');
+			var btns_mobile = document.querySelectorAll('.btn.mobile');
+
+			var reveals = document.querySelectorAll('.landmark');
+			for(var i = 0; i < reveals.length; i++){
+			
+			  var revealtop = reveals[i].getBoundingClientRect().top;
+
+			  if(revealtop < 50){
+				remove()
+				reveals[i].classList.add('btn_active');
+				var classList = reveals[i].className.split(' ')[0]
+				for(var n = 0; n < btns_computer.length; n++){
+					if(classList === btns_computer[n].className.split(' ')[0]) {
+						btns_computer[n].classList.add("btn_active")
+						break
+					}
+				}
+				for(var n = 0; n < btns_mobile.length; n++){
+					if(classList === btns_mobile[n].className.split(' ')[0]) {
+						btns_mobile[n].classList.add("btn_active")
+						break
+					}
+				}
+				
+			  }
+			  }
+			}
 	</script>
 
 </body>

@@ -206,7 +206,10 @@ ul { list-style-type:disc }
 
 .landmark {
   position: relative;
-  bottom: 10vh;
+  bottom: 100px;
+  background-color: red;
+  height: 10px;
+  width: 10px;
 }
 
 .head-separator{
@@ -320,6 +323,10 @@ a.btn, a.btn_active{
 
 a.btn:hover {
   background-size: 100% 100%;
+}
+
+a.btn_active:hover {
+  background-size: 0% 0%;
 }
 
 .info_link {
@@ -528,7 +535,7 @@ body.noscroll {
     padding-bottom: 0vh;
     background: linear-gradient(to top, var(--gradiant-color) 0%, var(--gradiant-color) 9%, transparent 9%) no-repeat left bottom / 0 100%;
   }
-  
+
   #switch {
     margin: 2vh;
   }
