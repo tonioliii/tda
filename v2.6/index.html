@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title> Lycée Thérèse d'Avila</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style/style.css" type="text/css" />
+	<link rel="icon" href="favicon.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="head">
+		<div class="text">
+			<div class="logo">
+				<h1> Lycée TDA </h1>
+			</div>
+			<div id="nav-bar" class="computer" cellspacing="0" cellpadding="0">
+				<a class="btn_active computer" href="#accueil"> Accueil </a>
+				<a class="btn computer" href="#professeurs"> Professeurs  </a>
+				<a class="btn computer" href="#classes"> Classes </a>
+				<a class="btn computer" href="#baccalaureat"> Baccalauréat </a>
+				<a class="btn computer" href="#vie_scolaire"> Vie scolaire </a>
+				<label id="switch computer" class="switch">
+					<input type="checkbox" onchange="toggleTheme()" id="slider">
+					<span class="slider round computer"></span>
+				</label>
+
+				<div id="nav-bar-mobile" cellspacing="0" cellpadding="0">
+					<a class="btn_active mobile" href="#accueil"> Accueil </a>
+					<a class="btn mobile" href="#professeurs"> Professeurs  </a>
+					<a class="btn mobile" href="#classes"> Classes </a>
+					<a class="btn mobile" href="#baccalaureat"> Baccalauréat </a>
+					<a class="btn mobile" href="#vie_scolaire"> Vie scolaire </a>
+					<label id="switch mobile" class="switch">
+						<input type="checkbox" onchange="toggleTheme()" id="slider">
+						<span class="slider round mobile"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<img class="menu-btn" src="image/menu-btn.png">
+		<hr class="head-separator">
+	</div>
+
+	<div id="contenu">
+		<div id="accueil" class="landmark"></div>
+		<div class="box box1">
+			<div class="left reveal reveal-left2right">
+				<h2> Bienvenue...</h2>
+				<p>
+					Lycée Thérèse D'Avila <br>
+					Ensemble scolaire <br>
+					Maternelle, primaire, collège, lycée.
+				</p>
+				<p> <span class="important"> Top  5 </span> meilleurs lycées de Lille <br/> </p>
+			</div>
+	
+			<div class="right reveal reveal-right2left">
+				<img src="image/Accueil.jpg" alt="image tda" width="180" class="main-image">
+			</div>
+		</div>
+		
+		<div id="professeurs" class="landmark"></div>
+		<div class="box">			
+			<h2>
+				Nos Professeurs
+			</h2>
+		</div>
+		<div class="box box2">	
+			<div class="left reveal reveal-left2right">
+				<img src="image/Accueil.jpg" alt="image tda" width="180" class="main-image">
+			</div>
+			<div class="right reveal reveal-right2left">
+				<p>
+					prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof prof 
+				</p>
+			</div>
+		</div>
+
+		<div id="classes" class="landmark"></div>
+		<div class="box">			
+			<h2>
+				Nos Classes
+			</h2>
+		</div>
+		<div class="box box2">	
+			<div class="left reveal reveal-left2right">
+				<img src="image/Accueil.jpg" alt="image tda" width="180" class="main-image">
+			</div>
+			<div class="right reveal reveal-right2left">
+				<p>
+					Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes Classes 
+				</p>
+			</div>
+		</div>
+
+		<div id="baccalaureat" class="landmark"></div>
+		<div class="box">			
+			<h2>
+				Le Baccalaureat
+			</h2>
+		</div>
+		<div class="box box2">	
+			<div class="left reveal reveal-left2right">
+				<img src="image/Accueil.jpg" alt="image tda" width="180" class="main-image">
+			</div>
+			<div class="right reveal reveal-right2left">
+				<p>
+					BacBacBacBacBacBacBac BacBacBacBacBac BacBacBacBacBac BacBacBacBacBacBacBac BacBacBacBacBacBacBacBac BacBacBacBacBacBacBacBac BacBacBacBacBacBac BacBacBacBacBac<br>BacBacBacBacBac BacBacBacBacBacBac
+				</p>
+			</div>
+		</div>
+
+		<div id="vie_scolaire" class="landmark"></div>
+		<div class="box">			
+			<h2>
+				Notre Vie Scolaire
+			</h2>
+		</div>
+		<div class="box box2">	
+			<div class="left reveal reveal-left2right">
+				<img src="image/Accueil.jpg" alt="image tda" width="180" class="main-image">
+			</div>
+			<div class="right reveal reveal-right2left">
+				<p>
+					Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire <br> Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire <br> Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire <br> Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire Vie Scolaire
+				</p>
+			</div>
+		</div>
+		
+		<div class="box box3">
+			<div class="card">
+				<i class="fa fa-file-image-o card-ico"></i><h4 class="title">prout</h4><hr class="delimitor"><p class="desc">caca caca caca caca caca caca caca caca caca caca caca caca caca</p>
+			</div>
+			<div class="card">
+				<i class="fa fa-file-image-o card-ico"></i><h4 class="title">prout</h4><hr class="delimitor"><p class="desc">caca caca caca caca caca caca caca caca caca caca caca caca caca</p>
+			</div>
+			<div class="card">
+				<i class="fa fa-file-image-o card-ico"></i><h4 class="title">prout</h4><hr class="delimitor"><p class="desc">caca caca caca caca caca caca caca caca caca caca caca caca caca</p>
+			</div>
+		</div>
+
+		<div class="infos">
+			<h3> A lire aussi: </h3>
+			<li> <a class="info_link" href="https://groupe-reussite.fr/ressources/blog/choisir-son-lycee/" target="_blank"> Choisir son lycée ? </a> </li>
+			<li> <a class="info_link" href="https://www.letudiant.fr/lycee/annuaire-des-lycees/fiche/lycee-general-prive-therese-davila-59.html" target="_blank"> Le lycée thérèse d'avila </a> </li>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="copyright">
+			<a href="https://tonioliii.github.io/tda" class="">tonioliii.github.io/tda &copy; 2023 All Right Reserved</a>
+		</div>
+		<div class="social">
+			<a href="https://example.com" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://example.com" target="_blank"><i class="fa fa-youtube-play"></i></a>
+			<a href="https://example.com" target="_blank"><i class="fa fa-discord"></i></a>
+		</div>
+	</div>
+
+	<!-- Theme Changer -->
+	<script type="text/javascript"> 
+		function setTheme(themeName) {
+		    localStorage.setItem('theme', themeName);
+		    document.documentElement.className = themeName;
+		}
+
+		function toggleTheme() {
+		    if (localStorage.getItem('theme') === 'theme-dark') {
+		        setTheme('theme-light');
+		    } else {
+		        setTheme('theme-dark');
+		    }
+		}
+
+		(function () {
+		    if (localStorage.getItem('theme') === 'theme-dark') {
+		        setTheme('theme-dark');
+		        document.getElementById('slider').checked = false;
+		    } else {
+		        setTheme('theme-light');
+		      document.getElementById('slider').checked = true;
+		    }
+		})();
+	</script>
+
+
+	<!-- Menu hamburger -->
+	<script type="text/javascript">
+		var delay = ( function() {
+		    var timer = 0;
+		    return function(callback, ms) {
+		        clearTimeout (timer);
+		        timer = setTimeout(callback, ms);
+		    };
+		})();
+
+        const menuHamburger = document.querySelector(".menu-btn")
+        const navbar = document.querySelector("#nav-bar-mobile")
+		const body = document.querySelector("body")
+		const btn = document.querySelectorAll(".btn.mobile")
+		const btn_active = document.querySelector(".btn_active.mobile")
+
+
+		function toogle_mobile_menu(){
+			if ( navbar.classList.contains('mobile-menu') ) {navbar.classList.add('animation') & navbar.classList.remove('mobile-menu') & body.classList.remove('noscroll') & delay(function(){navbar.classList.remove('animation')}, 500)} else (navbar.classList.add('mobile-menu') & body.classList.add('noscroll'))
+		}
+
+		menuHamburger.addEventListener('click',()=>{toogle_mobile_menu()})
+
+		btn_active.addEventListener('click',()=>{toogle_mobile_menu()})
+
+		for(var i = 0; i < btn.length; i++){
+			btn[i].addEventListener('click',()=>{toogle_mobile_menu()})
+		}
+
+	</script>
+
+
+	<!-- Animation scroll -->
+	<script type="text/javascript">
+		reveal()
+	    window.addEventListener('scroll', reveal);
+
+	    function reveal(){
+	      var reveals = document.querySelectorAll('.reveal');
+
+	      for(var i = 0; i < reveals.length; i++){
+
+	        var windowheight = window.innerHeight;
+	        var revealtop = reveals[i].getBoundingClientRect().top;
+	        var revealpoint = 0;
+
+	        if(revealtop < windowheight - revealpoint){
+	          reveals[i].classList.add('active');
+	        }
+	        // else{
+	        //   reveals[i].classList.remove('active');
+	        // }
+	      }
+	    }
+	</script>
+
+</body>
+
+</html>
