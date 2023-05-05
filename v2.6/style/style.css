@@ -295,10 +295,11 @@ i.fa {
 .logo{
   display: flex;
   align-items:center;
-  justify-content: center;
+  justify-content: start;
   font-size: 2.6vh;
   color: var(--font-color);
   width: 30%;
+  margin-left: 10vh;
 }
 
 a.btn, a.btn_active{
@@ -538,7 +539,11 @@ body.noscroll {
   }
 
   .logo {
-    width: 50%;
+    width: 70%;
+  }
+
+  #nav-bar {
+    width: 0%;
   }
 }
 
