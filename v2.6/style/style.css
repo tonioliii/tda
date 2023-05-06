@@ -17,7 +17,7 @@
 @keyframes right2left {
   0% {
       opacity: 0;
-      transform: translateX(6%);
+      transform: translateX(50px);
   }
   100% {
       opacity: 1;
@@ -28,7 +28,7 @@
 @keyframes left2right {
   0% {
       opacity: 0;
-      transform: translateX(-6%);
+      transform: translateX(-50px);
   }
   100% {
       opacity: 1;
@@ -206,7 +206,7 @@ ul { list-style-type:disc }
 
 .landmark {
   position: relative;
-  bottom: 10vh;
+  bottom: 100px;
 }
 
 .head-separator{
@@ -281,7 +281,6 @@ i.fa {
   z-index: 1;
   background-color: var(--background-color);
   position: sticky;
-  position: -webkit-sticky;
   width: 100%;
   top: 0px;
   margin-bottom: 3vh;
@@ -296,11 +295,10 @@ i.fa {
 .logo{
   display: flex;
   align-items:center;
-  justify-content: start;
+  justify-content: center;
   font-size: 2.6vh;
   color: var(--font-color);
   width: 30%;
-  margin-left: 10vh;
 }
 
 a.btn, a.btn_active{
@@ -365,7 +363,6 @@ span.important {
   --mobile-menu-color-btn: 100%;
   --gradiant-color: #FD6F1F;
   --gradiant-color-hover: rgb(224,90,27);
-  --slider-background: url('../image/sunny.png');
 }
 .theme-dark {
   --background-color: rgb(49,51,56);
@@ -376,7 +373,6 @@ span.important {
   --mobile-menu-color-btn: 0%;
   --gradiant-color: #FD6F1F;
   --gradiant-color-hover: rgb(224,90,27);
-  --slider-background: url('../image/night.png');
 }
 .container {
   display: flex;
@@ -438,7 +434,7 @@ span.important {
   -webkit-transition: all 0.4s, visibility 0s, opacity 0s;
   transition: all 0.4s, visibility 0s, opacity 0s;
   box-shadow: 0 0vh 1vh var(--font-color);
-  background: var(--background-color) var(--slider-background);
+  background: var(--background-color) url('../image/night.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2.3vh;
@@ -448,7 +444,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(2.4vh);
   -ms-transform: translateX(2.4vh);
   transform: translateX(2.4vh);
-  background: white var(--slider-background);
+  background: white url('../image/sunny.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 3vh;
@@ -464,7 +460,7 @@ input:checked + .slider:before {
 }
 
 body.noscroll {
-  overflow: hidden;
+  overflow-y: hidden
 }
 
 .mobile {
@@ -515,11 +511,6 @@ body.noscroll {
     z-index : 1;
     background-color: var(--mobile-menu-color);
     backdrop-filter: blur(0.8vh);
-
-    -webkit-backdrop-filter: blur(0.8vh);
-    -moz-backdrop-filter: blur(0.8vh);
-    -ms-backdrop-filter: blur(0.8vh);
-    
     transition: margin 0.5s ease;
     }
 
@@ -547,11 +538,7 @@ body.noscroll {
   }
 
   .logo {
-    width: 70%;
-  }
-
-  #nav-bar {
-    width: 0%;
+    width: 50%;
   }
 }
 
