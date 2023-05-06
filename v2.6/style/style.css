@@ -365,6 +365,7 @@ span.important {
   --mobile-menu-color-btn: 100%;
   --gradiant-color: #FD6F1F;
   --gradiant-color-hover: rgb(224,90,27);
+  --slider-background: url('../image/sunny.png');
 }
 .theme-dark {
   --background-color: rgb(49,51,56);
@@ -375,6 +376,7 @@ span.important {
   --mobile-menu-color-btn: 0%;
   --gradiant-color: #FD6F1F;
   --gradiant-color-hover: rgb(224,90,27);
+  --slider-background: url('../image/night.png');
 }
 .container {
   display: flex;
@@ -436,7 +438,7 @@ span.important {
   -webkit-transition: all 0.4s, visibility 0s, opacity 0s;
   transition: all 0.4s, visibility 0s, opacity 0s;
   box-shadow: 0 0vh 1vh var(--font-color);
-  background: var(--background-color) url('../image/night.png');
+  background: var(--background-color) var(--slider-background);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2.3vh;
@@ -446,7 +448,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(2.4vh);
   -ms-transform: translateX(2.4vh);
   transform: translateX(2.4vh);
-  background: white url('../image/sunny.png');
+  background: white var(--slider-background);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 3vh;
