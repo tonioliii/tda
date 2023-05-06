@@ -512,6 +512,11 @@ body.noscroll {
     z-index : 1;
     background-color: var(--mobile-menu-color);
     backdrop-filter: blur(0.8vh);
+
+    -webkit-backdrop-filter: blur(0.8vh);
+    -moz-backdrop-filter: blur(0.8vh);
+    -ms-backdrop-filter: blur(0.8vh);
+    
     transition: margin 0.5s ease;
     }
 
