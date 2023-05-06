@@ -17,7 +17,7 @@
 @keyframes right2left {
   0% {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateX(6%);
   }
   100% {
       opacity: 1;
@@ -28,7 +28,7 @@
 @keyframes left2right {
   0% {
       opacity: 0;
-      transform: translateX(-50px);
+      transform: translateX(-6%);
   }
   100% {
       opacity: 1;
