@@ -206,7 +206,7 @@ ul { list-style-type:disc }
 
 .landmark {
   position: relative;
-  bottom: 100px;
+  bottom: 10vh;
 }
 
 .head-separator{
