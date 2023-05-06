@@ -461,7 +461,7 @@ input:checked + .slider:before {
 }
 
 body.noscroll {
-  overflow-y: hidden
+  overflow: hidden;
 }
 
 .mobile {
