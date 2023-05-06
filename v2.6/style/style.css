@@ -281,6 +281,7 @@ i.fa {
   z-index: 1;
   background-color: var(--background-color);
   position: sticky;
+  position: -webkit-sticky;
   width: 100%;
   top: 0px;
   margin-bottom: 3vh;
